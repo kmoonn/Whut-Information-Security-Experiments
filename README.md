@@ -29,15 +29,10 @@ burpsuite
 
 MySQL
 
-pikachu SQL注入
-
-墨者 3个选做
+sqli-labs SQL注入
 
 ### 实验四 XSS 攻击与防御
 
 JavaScript
 
-pikachu xss攻击
-
-
-
+xss-labs xss攻击
