@@ -13,15 +13,17 @@ base64 Python库
 
 图片隐写术
 
-文件快递柜取件码 89456 https://share.lanol.cn
+文件快递柜取件码 89456 https://share.lanol.cn (已失效，移步附件)
 
 被裁掉的logo
 
-下载图片-解压密码(微积分)-16进制-base64-答案
+下载图片-取件密码-16进制-base64-答案
 
 ### 实验二 报文监听与抓包工具使用
 
 burpsuite
+
+弱口令
 
 暴力破解
 
@@ -29,10 +31,14 @@ burpsuite
 
 MySQL
 
-sqli-labs SQL注入
+sqli-labs 
+
+SQL注入
 
 ### 实验四 XSS 攻击与防御
 
 JavaScript
 
-xss-labs xss攻击
+xss-labs 
+
+xss攻击
