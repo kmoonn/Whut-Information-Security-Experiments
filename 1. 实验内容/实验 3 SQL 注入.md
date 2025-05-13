@@ -52,7 +52,7 @@ SELECT username, email FROM member WHERE id=1 OR 1=1;
 #### 1. 注入实验：Less-1（基础 GET 注入）
 
 - **目标页面**：  [地址](http://43.140.204.72:9003/sqlilabs/Less-1/)
-- <img src = "http://image.kmoon.fun/GitHub/202505061811567.png" width="50%">
+- <img src = "https://image.kmoon.fun/2025/202505061811567.png" width="50%">
 - **注入步骤**：
     1. 探测注入点：输入 `'`、`1'--+` 等判断是否存在报错信息
 	    `1--+` 是在 SQL 注入中常见的一种语句，用于**注释掉 SQL 查询中后续的部分**，防止语法错误或绕过条件限制，在 SQL 中，`--` 是注释符，表示这一行后面全部都是注释内容。
@@ -68,7 +68,7 @@ SELECT username, email FROM member WHERE id=1 OR 1=1;
     - 用户数据（如 username、email 等）
 #### 2. 注入实验：Less-11（POST注入）
 - **目标页面**：[地址](http://43.140.204.72:9003/sqlilabs/Less-11/)
-- <img src = "https://image.kmoon.fun/GitHub/202505061809457.png" width = "50%">
+- <img src = "https://image.kmoon.fun/2025/202505061809457.png" width = "50%">
 - **方式**：POST 请求需借助抓包工具（如 **Burp Suite**）
 - **注入步骤**：
     1. 捕获 POST 请求
@@ -97,7 +97,7 @@ SELECT username, email FROM member WHERE id=1 OR 1=1;
 - [墨者学院 SQL注入漏洞测试(布尔盲注)](https://mozhe.cn/bug/detail/UDNpU0gwcUhXTUFvQm9HRVdOTmNTdz09bW96aGUmozhe)
 - 需要注册账号，登录启动靶场环境。
 - 若选做本题，需要在实验报告中描述解题思路。
-	<center><img src="https://image.kmoon.fun/GitHub/202505061845227.png" alt="image" width="400" /></center>
+	<center><img src="https://image.kmoon.fun/2025/202505061845227.png" alt="image" width="400" /></center>
 
 ## 参考资料
 - [sqli-labs GitHub 项目](https://github.com/Audi-1/sqli-labs)
