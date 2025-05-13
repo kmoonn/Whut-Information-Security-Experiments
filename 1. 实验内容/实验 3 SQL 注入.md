@@ -27,6 +27,7 @@ $result=execute($link, $query);
 | --- | -------- | ----------- | --------- |
 | 1   | 张三       | zhangsan123 | zs@qq.com |
 | 2   | 李四       | lisi123     | ls@qq.com |
+
 那么用户提交?id=1，则代入数据库正常查询且正常输出用户张三的信息。
 但如果用户提交的数据为
 ```shell
@@ -67,11 +68,11 @@ SELECT username, email FROM member WHERE id=1 OR 1=1;
     - 用户数据（如 username、email 等）
 #### 2. 注入实验：Less-11（POST注入）
 - **目标页面**：[地址](http://43.140.204.72:9003/sqlilabs/Less-11/)
-- <img src = "http://image.kmoon.fun/GitHub/202505061809457.png" width = "50%">
+- <img src = "https://image.kmoon.fun/GitHub/202505061809457.png" width = "50%">
 - **方式**：POST 请求需借助抓包工具（如 **Burp Suite**）
 - **注入步骤**：
     1. 捕获 POST 请求
-    ![image.png](http://image.kmoon.fun/GitHub/202505061816340.png)
+    ![image.png](https://image.kmoon.fun/kmoonblog/2025/202505061816340.png)
     2. 修改 `uname`和 `passwd` 字段尝试注入，
 	    - `uname=admin'&passwd=admin&submit=Submit` 系统报错，证明有SQL注入漏洞，并且为字符型注入
 	    - 判断字段长度
@@ -96,7 +97,7 @@ SELECT username, email FROM member WHERE id=1 OR 1=1;
 - [墨者学院 SQL注入漏洞测试(布尔盲注)](https://mozhe.cn/bug/detail/UDNpU0gwcUhXTUFvQm9HRVdOTmNTdz09bW96aGUmozhe)
 - 需要注册账号，登录启动靶场环境。
 - 若选做本题，需要在实验报告中描述解题思路。
-	<center><img src="http://image.kmoon.fun/GitHub/202505061845227.png" alt="image" width="400" /></center>
+	<center><img src="https://image.kmoon.fun/GitHub/202505061845227.png" alt="image" width="400" /></center>
 
 ## 参考资料
 - [sqli-labs GitHub 项目](https://github.com/Audi-1/sqli-labs)
