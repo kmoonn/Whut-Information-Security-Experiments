@@ -72,7 +72,7 @@ SELECT username, email FROM member WHERE id=1 OR 1=1;
 - **方式**：POST 请求需借助抓包工具（如 **Burp Suite**）
 - **注入步骤**：
     1. 捕获 POST 请求
-    ![image.png](https://image.kmoon.fun/kmoonblog/2025/202505061816340.png)
+    ![image.png](https://image.kmoon.fun/2025/202505061816340.png)
     2. 修改 `uname`和 `passwd` 字段尝试注入，
 	    - `uname=admin'&passwd=admin&submit=Submit` 系统报错，证明有SQL注入漏洞，并且为字符型注入
 	    - 判断字段长度
